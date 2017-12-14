@@ -1,0 +1,114 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #3d3d3d;
+}
+.text-attentionCol {
+  color: #d50300;
+}
+.text-bold {
+  font-weight: 600;
+}
+.text-black {
+  font-weight: 900;
+}
+.text-careCol {
+  color: #023672;
+}
+.text-center {
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1010px;
+  width: 100%;
+}
+input {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  min-width: 265px;
+  height: 32px;
+  font-weight: 100;
+  font-size: 14px;
+  border: 1px solid #b4b4b4;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.btn {
+  padding: 0 42px 0 42px;
+  min-height: 32px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: -moz-linear-gradient(60deg, #8c0200 0%, #d50300 100%);
+  background: -webkit-linear-gradient(60deg, #8c0200 0%, #d50300 100%);
+  background: -ms-linear-gradient(60deg, #8c0200 0%, #d50300 100%);
+  transition: 0.2s;
+}
+.btn:hover {
+  background: -moz-linear-gradient(60deg, #730200 0%, #bc0300 100%);
+  background: -webkit-linear-gradient(60deg, #730200 0%, #bc0300 100%);
+  background: -ms-linear-gradient(60deg, #730200 0%, #bc0300 100%);
+}
+.btn.inverted {
+  font-size: 14px;
+  font-weight: 100;
+  color: #000;
+  text-transform: none;
+  border: 1px solid #d50300;
+  background: transparent;
+}
+.btn.inverted:hover {
+  color: #fff;
+  background: #d50300;
+}
+.form_agree {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #9c9c9c;
+}
+.form_agree a {
+  text-decoration: underline;
+}
+.form_agree a:hover {
+  text-decoration: none;
+}
+.burger i,
+.burger i::before,
+.burger i::after {
+  background: #000;
+}
+h2 {
+  margin: 25px 0 25px 0;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 68px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 .bordered {
+  position: relative;
+  padding: 18px 25px 18px 25px;
+}
+@media (max-width: 750px) {
+  h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+  input {
+    min-width: 100%;
+  }
+}

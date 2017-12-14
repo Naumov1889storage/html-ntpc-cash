@@ -1,0 +1,129 @@
+@import "common"
+
+.feature {
+	padding-top: 50px
+	overflow: hidden
+	.container {
+		position: relative
+		&:before {
+			content: ''
+			position: absolute
+			z-index: -1
+			right: 200px
+			top: 400px
+			width: 2000px
+			height: 2000px
+			background: #eff6ff
+			transform: rotate(45deg)
+		}
+		&:after {
+			content: ''
+			position: absolute
+			z-index: -1
+			top: 0
+			width: 2000px
+			height: 430px
+			background: #eff6ff
+			transform: rotate(45deg)
+		}
+	}
+	&_list {
+		position: relative
+		margin: 150px 0 150px 600px
+		&:before {
+			content: ''
+			position: absolute
+			top: -40px
+			left: -610px
+			width: 558px
+			height: 550px
+			background: url(/img/feature.png) no-repeat 2px
+		}
+		&:after {
+			content: ''
+			position: absolute
+			top: 160px
+			left: -610px
+			width: 350px
+			height: 158px
+			background: url(/img/logo.png) no-repeat
+		}
+		li {
+			margin: 100px 0 100px 0
+			font-weight: 500
+			line-height: 21px
+			color: #807c7c
+			text-transform: uppercase
+		}
+	}
+}
+
+@media (max-width: 950px) {
+
+	.feature {
+		&_list {
+			margin-left: 530px
+			&:after {
+				display: none
+			}
+		}
+	}
+
+}
+@media (max-width: 950px) {
+
+	.feature {
+		&_list {
+			margin-left: 530px
+			&:before {
+				left: -580px
+			}
+			&:after {
+				display: none
+			}
+		}
+	}
+
+}
+
+@media (max-width: 880px) {
+
+	.feature {
+		&_list {
+			margin-left: 400px
+		}
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	.feature {
+		&_list {
+			margin-left: 150px
+		}
+	}
+
+}
+
+@media (max-width: 400px) {
+
+	.feature {
+		.container {
+			&:before {
+				top: -450px
+			}
+		}
+		&_list {
+			margin: 50px 0 30px 20px
+			&:before {
+				display: none
+			}
+			li {
+				margin: 20px 0 20px 0
+				list-style:circle
+			}
+		}
+	}
+
+}

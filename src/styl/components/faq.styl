@@ -1,0 +1,91 @@
+@import "common"
+
+.faq {
+	padding: 70px 0 30px 0
+	min-height: 610px
+	background: #f0ecec url(/img/bg-faq.jpg) center no-repeat
+	-webkit-background-size: cover
+	background-size: cover
+
+	h2 {
+		margin-bottom: 70px
+	}
+	&_column {
+		width: 48%
+	}
+
+	.accordion {
+		font-size: 16px
+		line-height: 24px
+		font-weight: 300
+		.title {
+			margin-bottom: 12px
+			padding: 0 0 0 6px
+			text-transform: uppercase
+			border-left: 3px solid #dadada
+			.arrow {
+				position: static
+
+				display: inline-block
+				margin: 0 0 -3px 2px
+				width: 6px
+				height: 5px
+
+				background: none
+				border: 5px solid transparent
+				border-top: 5px solid attentionCol
+
+				transition .3s
+			}
+			&.active {
+				.arrow {
+					margin-bottom: 3px
+
+					border-top: transparent
+					border-bottom-color: attentionCol
+
+					-webkit-transform: none
+					-moz-transform: none
+					-ms-transform: none
+					-o-transform: none
+					transform: none
+				}
+			}
+		}
+		.content {
+			margin: 20px 0 15px 15px
+			padding: 0 0 0 15px
+			line-height: 22px
+			border-left: 1px solid careCol
+		}
+	}
+
+	&_call {
+		margin-top: 45px
+		.btn {
+			width: 250px
+			padding: 0 22px 0 22px
+		}
+		p {
+			margin: 7px 0 7px 0
+			font-weight: 300
+		}
+		a {
+			font-size: 22px
+			font-weight: 900
+		}
+	}
+}
+
+@media (max-width: 650px) {
+
+	.faq {
+		.flex_row__between {
+			flex-wrap: wrap
+			.faq_column {
+				width: 100%
+			}
+		}
+	}
+
+}

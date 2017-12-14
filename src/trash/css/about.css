@@ -1,0 +1,9 @@
+@font-face {
+  font-family: '';
+  src: url("");
+}
+.disable {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+}

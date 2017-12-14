@@ -1,0 +1,26 @@
+doctype html
+html(lang="ru-Ru")
+    head
+        meta(charset = 'utf-8')
+        meta(name='viewport', content="initial-scale=1.0, width=device-width")
+        block title
+            title  НТПЦ
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900')
+        link(rel='stylesheet', href='css/concat-css-libs.min.css')
+        link(rel='stylesheet', href='css/concat-css.min.css')
+    body
+        .overlay
+        include header
+        include sanction
+        include suit
+        include cash
+        include step
+        include option
+        include faq
+        include order
+        include feature
+        include contact
+
+        script(src='js/jquery-3.2.1.min.js')
+        script(src='js/concat-js-libs.min.js')
+        script(src='js/common.min.js')

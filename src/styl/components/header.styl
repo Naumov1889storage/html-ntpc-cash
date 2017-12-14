@@ -1,0 +1,362 @@
+@import "common"
+
+.header {
+	padding-top: 25px
+	padding-bottom: 75px;
+	background: url(/img/bg-header.jpg) center top no-repeat
+	-webkit-background-size: cover
+	background-size: cover
+	&_top__mob {
+		display: none
+	}
+	&_logo {
+		img {
+			width: 180px
+		}
+	}
+	&_contact {
+		li {
+			margin-bottom: 2px
+			a {
+				position: relative
+				padding-left: 19px
+				font-size: 14px
+				font-weight: 100
+				&:before {
+					content: ''
+					position: absolute
+					left: 0
+					top: 2px
+					background: url(/img/iconset.png)
+				}
+			}
+			&:nth-child(1) {
+				a {
+					&:before {
+						width: 14px
+						height: 16px
+						background-position: -3px -4px
+					}
+				}
+			}
+			&:nth-child(2) {
+				a {
+					&:before {
+						width: 15px
+						height: 16px
+						background-position: -47px -2px
+					}
+				}
+			}
+		}
+	}
+	
+	&_nav {
+		margin-top: 15px
+		li {
+			a {
+				display: block
+				padding: 0 10px 0 9px
+				line-height: 12px
+				font-size: 14px
+				text-transform: uppercase
+
+				border-right: 1px solid #dadada
+			}
+			&:first-child {
+				a {
+					padding-left: 0
+				}
+			}
+			&:last-child {
+				a {
+					border: none
+				}
+			}
+		}
+	}
+
+	&_call {
+		a {
+			position: relative
+			display: block
+			margin-bottom: 17px
+			padding-left: 25px
+			font-size: 20px
+			font-weight: 900
+			&:before {
+				content: ''
+				position: absolute
+				left: 0
+				width: 20px
+				height: 22px
+				background: url(/img/iconset.png) -21px -1px
+			}
+		}
+	}
+
+	h1 {
+		margin: 45px 0 15px 0
+		max-width: 750px
+		font-size: 52px
+		font-weight: 500
+		text-transform: uppercase
+		.text-attentionCol {
+			font-size: 60px
+		}
+	}
+
+	&_form {
+		position: relative
+		margin-left: 85px
+		width: 310px
+		font-weight: 300
+		text-align: center
+
+		.header_cash {
+			position: absolute
+			top: -120px
+			right: -660px
+			max-width: 433px
+			width: 433px
+			height: 403px
+		}
+
+		&__text1 {
+			margin-bottom: 10px
+			font-size: 24px
+		}
+		&__text2 {
+			margin-bottom: 12px
+			font-size: 16px
+			line-height: 20px
+		}
+
+		input, button {
+			width: 100%
+		}
+	}
+
+	&_feature {
+		margin-top: 50px
+		li {
+			position: relative
+			margin-right: 6%
+			padding-left: 70px
+			font-size: 14px
+			font-weight: 300
+
+			&:before {
+				content: ''
+				position: absolute
+				top: -5px
+				left: 0
+				width: 60px
+				height: 50px
+				background: url(/img/iconset.png)
+			}
+			
+			&:nth-child(1) {
+				padding-left: 58px
+				width: 230px
+				&:before {
+					width: 45px
+					background-position: 5px -30px
+				}
+			}
+			&:nth-child(2) {
+				margin-right: 30px
+				width: 290px
+				&:before {
+					background-position: -51px -30px
+				}
+			}
+			&:nth-child(3) {
+				margin-right: 0
+				width: 260px
+				&:before {
+					background-position: -112px -30px
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 980px) {
+
+	.header {
+
+		&_top {
+			display: none
+			&__mob {
+				display: flex
+				align-items: center
+				.burger {
+					margin-left: 10px
+				}
+			}
+		}
+
+		&_sidebar {
+			position: absolute
+			z-index: 1001
+			background: orange
+			top: 130px
+			left: -500px
+			transition: .3s
+			&.active {
+				left: 0
+			}
+		}
+
+		&_nav {
+			flex-direction: column
+			li {
+				a {
+					padding: 10px 20px 10px 20px!important
+				}
+			}
+		}
+		&_contact {
+			&__mob {
+				padding: 20px 20px 20px 20px
+			}
+		}
+
+		&_call {
+			&__mob {
+				display: none
+			}
+		}
+
+		h1 {
+			margin-top: 35px;
+			font-size: 40px
+			.text-attentionCol {
+				font-size: 47px
+			}
+		}
+
+		&_form {
+			.header_cash {
+				right: -500px
+			}
+		}
+
+	}
+
+}
+
+@media (max-width: 880px) {
+
+	.header {
+		padding-bottom: 0
+		&_feature {
+			flex-wrap: wrap
+			justify-content: space-around
+			margin-top: 60px
+			li {
+				margin-bottom: 50px
+			}
+		}
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	.header {
+
+		&_contact {
+			&__mob {
+				padding-bottom: 4px
+			}
+		}
+
+		&_call {
+			a {
+				position: relative
+				display: block
+				margin-bottom: 17px
+				padding-left: 25px
+				font-size: 20px
+				font-weight: 900
+				&:before {
+					content: ''
+					position: absolute
+					left: 0
+					width: 20px
+					height: 22px
+					background: url(/img/iconset.png) -21px -1px
+				}
+			}
+		}
+		&_call {
+			display: none
+			&__mob {
+				display: flex
+				padding: 0 20px 25px 20px
+
+				a {
+					padding-left: 19px
+					font-size: 14px
+					font-weight: 100
+					&:before {
+						background-position: -15px -1px
+						-webkit-background-size:650%
+						background-size: 650%
+					}
+				}
+			}
+		}
+
+
+		&_form {
+			margin-left: 0
+			width: 100%
+			font-weight: 300
+			text-align: center
+
+			.header_cash {
+				display: none
+			}
+
+			input, button {
+				width: 100%
+			}
+		}
+
+		&_feature {
+			li {
+				margin-right: 0!important
+				padding-left: 70px
+				width: 290px!important
+				&:nth-child(1) {
+					padding-left: 70px
+					&:before {
+						left: 10px
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.header {
+		h1 {
+			font-size: 30px
+			.text-attentionCol {
+				font-size: 37px
+			}
+		}
+		&_sidebar {
+			width: 100%
+		}
+	}
+
+}
+
